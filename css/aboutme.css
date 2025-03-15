@@ -1,0 +1,189 @@
+:root {
+    --primary-color: #0073e6;
+    --secondary-color: #ff6600;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+    --nav-link-color: black;
+    --nav-link-hover: purple;
+    --card-background: black;
+    --card-text-color: white;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --code-background: #333;
+    --code-text: #fff;
+    --sidebar-background: #e3f2fd;
+}
+
+[data-theme="dark"] {
+    --background-color: #333;
+    --text-color: #fff;
+    --card-background: white;
+    --card-text-color: black;
+}
+
+main *{
+    background-color: var(--card-background);
+    color: var(--card-text-color);
+}
+
+
+
+h2 {
+    font-size: 38px;
+}
+
+.profile{
+    background-color: var(--card-background);
+    color: var(--card-text-color);
+    display: flex;
+    justify-content: center;
+}
+
+.profile-content{
+    background-color: var(--card-background);
+    color: var(--card-text-color);
+}
+
+.Timeline svg {
+    width: 100%;   /* Makes the SVG responsive, scaling to 100% of its container's width */
+    height: auto;  /* Maintains aspect ratio of the SVG */
+}
+
+.Timeline text {
+    font-size: .6vw; /* Scale text size based on viewport width */
+}
+
+/* style for what I enjoy doing */
+.Enjoyments {
+    padding: 30px;
+    margin-bottom: 20px;
+    font-size: 1.2vw;
+    background-color: var(--card-background);
+    color: var(--card-text-color);
+
+    h2 {
+        margin-bottom: 20px;
+        background-color: var(--card-background);
+        color: var(--card-text-color);
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        background-color: var(--card-background);
+        color: var(--card-text-color);
+
+        li {
+            margin-bottom: 10px;
+            background-color: var(--card-background);
+            color: var(--card-text-color);
+        }
+    }
+}
+
+.Hobbies {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background);
+    color: var(--card-text-color);
+    h2 {
+        margin-bottom: 15px;
+        background-color: var(--card-background);
+        color: var(--card-text-color);
+    }
+
+    details {
+        padding: 10px;
+        margin: 0;
+        background-color: var(--card-background);
+        color: var(--card-text-color);
+        summary {
+            padding-bottom: 10px;
+            background-color: var(--card-background);
+            color: var(--card-text-color);
+        }
+
+        p.minecraft:hover {
+            color: green;
+        }
+    }
+
+    iframe {
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 12px;   
+        width: 50%; 
+        height: 152px;
+    }
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 767px) {
+    h2 {
+        font-size: 6vw;
+    }
+    
+    .Timeline text {
+        font-size: 3.5vw; /* Scale text size based on viewport width */
+    }
+
+    .Enjoyments{
+        font-size: 5vw;
+    }
+
+    .Hobbies{
+        font-size: 5vw;
+    }
+
+    .Hobbies iframe{
+        border-radius: 10px;   
+        width: 100%; 
+        height: 100px;
+    }
+    
+
+}
+
+/* tablet/laptop breakpoint */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Timeline text {
+        font-size: 1.25vw; /* Scale text size based on viewport width */
+    }
+
+    .Enjoyments{
+        font-size: 4vw;
+    }
+
+    .Hobbies{
+        font-size: 4vw;
+    }
+
+    blockquote{
+        font-size: 3vw;
+    }
+    
+    .profile{
+        display: flex;
+        justify-content: center;
+    }
+
+    h2{
+        font-size: 5vw;
+    }
+    .profile h2.name{
+        font-size: 4vw;
+    }
+
+    .profile p{
+        font-size: 2.75vw;
+    }
+
+    .Hobbies iframe {
+        margin: 0;
+        padding: 0;
+        border: none;
+        height: 150px;
+        width: 300px;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charlie's personal portfolio">
+    <meta name="author" content="Charlie Trinh">
+    <meta name="keywords" content="portfolio, Charlie Trinh, web developer, projects, skills">
+    <title>Charlie's Portfolio</title>
+    <link rel="icon" href="/assets/computer-icon.png">
+    <link rel="stylesheet" href="/css/stylesheet_main.css">
+    <link rel="stylesheet" href="/css/project.css">
+</head>
+
+<body>
+
+    <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
+    <noscript>
+        <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view dark/light mode toggler.</p>
+      </noscript>
+
+
+      <section id="top">
+            <!-- dark light toggle button -->
+            <button id="themeToggle" class="theme-toggle-button" aria-label="Toggle theme">🌙</button>
+    <!-- UCSD logo and some backup images incase if one doesnt load -->
+    <picture>
+        <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
+        <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
+        <img src="/assets/UCSD-logo.svg.png" alt="Image of UCSD logo" width="150" height="150">
+    </picture>
+
+          <!-- title of my site -->
+          <header>
+            <h1>Charlie's Portfolio</h1>
+          </header>
+</section>
+    <hr>
+
+    <!-- nav bar so we can navigate through each page -->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/aboutme.html">About Me</a></li>
+            <li><a href="/html/projects.html"><b>Projects</b></a></li>
+            <li><a href="/html/skills.html">Skills</a></li>
+            <li><a href="/html/form-no-js.html">Contact Me (no js)</a></li>
+            <li><a href="/html/form-js.html">Contact Me (with js)</a></li>
+            <li><a href="/assets/Resume-Charlie-Trinh.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- main content of this page -->
+    <main>
+        <!-- section created to list a table of all my projects -->
+        <section id="projects">      
+            <table>
+                <!-- title of the table using caption -->
+                <caption><h2><u>My Projects</u></h2></caption>
+                <colgroup>
+                    <col span="5">
+                </colgroup>
+                    <!-- The name of each column of the table using thead, tr, and th -->
+                    <thead>
+                        <tr>
+                        <th>Project Name</th>
+                        <th>Technology</th>
+                        <th>Status</th>
+                        <th>Link</th>
+                        <th>Video Demo</th>
+                        </tr>
+                    </thead>
+
+                    <!-- The actual project content -->
+                    <tbody>
+                        <tr>
+                        <!-- Minimips project -->
+                        <td>MiniMips</td>
+                        <td>SystemVerilog</td>
+                        <td>Completed</td>
+                        <td><a href="https://github.com/Eban-Covarrubias/miniMips_ComputerArchitecture">View Project</a></td>
+                        <td>
+                            <figure>
+                                <div class="video-container">
+                                <video controls>
+                                    <source src="/assets/CSE141L_finalvideo.mp4" type="video/mp4">
+                                    Your browser doesn't support the video tag
+                                </video>
+                            </div>
+                                <a class="video-link" href="/assets/CSE141L_finalvideo.mp4" target="_blank">Watch Video</a>
+                            </figure>
+                        </td>
+                        </tr>
+
+                        <!-- Gen Z Work Journal Project -->
+                        <tr>
+                        <td>Gen Z Work Journal</td>
+                        <td>HTML, CSS, JS, React, Node.js</td>
+                        <td>Completed</td>
+                        <td><a href="https://cse110-sp24-group19.github.io/final-project/">View Project</a></td>
+                        <td>
+                            <figure>
+                                <div class="video-container">
+                                <video controls>
+                                    <source src="/assets/Gen-Z-work-journal-vid.mp4" type="video/mp4">
+                                    Your browser doesn't support the video tag
+                                </video>
+                            </div>
+                                <a class="video-link" href="/assets/Gen-Z-work-journal-vid.mp4" target="_blank">Watch Video</a>
+                            </figure>
+                        </td>
+                        </tr>
+                    </tbody>
+            </table>
+          </section>
+    </main>
+<hr>
+
+    <!-- separate content from main -->
+    <aside>
+        <h2>Socials</h2>
+        <address>
+          <a href="https://github.com/Charlitoes" target="_blank">Github</a>
+          <br>
+          <a href="https://www.linkedin.com/in/charlie-trinh/" target="_blank">LinkedIn</a>
+          <br>
+          <a href="mailto:c2trinh@ucsd.edu">c2trinh@ucsd.edu</a>
+          <br>
+          <a href="tel:+7606726004">+(760)-672-6004</a>
+        </address>
+      </aside>
+
+    <hr>
+
+    <footer>
+        <p>Charlie's website © 2025</p>
+    </footer>
+
+    <script src="/js/dark-light-mode.js"></script>
+
+</body>
+</html>

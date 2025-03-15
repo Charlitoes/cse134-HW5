@@ -1,0 +1,45 @@
+main * {
+    background-color: var(--card-background);
+    color: var(--card-text-color)
+}
+
+form:has(input:valid, textarea:valid) button {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form:has(input:valid, textarea:valid) button:hover {
+    background-color: darkgrey;
+}
+
+input:required:invalid, textarea:required:invalid {
+    border: 2px solid red;
+}
+
+input:required:valid, textarea:required:valid {
+    border: 2px solid green;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: none; /* Hidden by default */
+}
+
+.char-count {
+    font-size: 14px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.warning {
+    color: orange;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}

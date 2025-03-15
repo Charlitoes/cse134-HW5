@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charlie's personal portfolio">
+    <meta name="author" content="Charlie Trinh">
+    <meta name="keywords" content="portfolio, Charlie Trinh, web developer, projects, skills">
+    <title>Charlie's Portfolio</title>
+    <link rel="icon" href="/assets/computer-icon.png">
+    <link rel="stylesheet" href="/css/stylesheet_main.css">
+    <link rel="stylesheet" href="/css/contactme.css">
+</head>
+
+<body>
+
+
+    <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
+    <noscript>
+        <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view dark/light mode toggler.</p>
+      </noscript>
+
+
+      <section id="top">
+            <!-- dark light toggle button -->
+            <button id="themeToggle" class="theme-toggle-button" aria-label="Toggle theme">🌙</button>
+
+    <!-- UCSD logo and some backup images incase if one doesnt load -->
+    <picture>
+        <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
+        <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
+        <img src="/assets/UCSD-logo.svg.png" alt="Image of UCSD logo" width="150" height="150">
+    </picture>
+
+          <!-- title of my site -->
+          <header>
+            <h1>Charlie's Portfolio</h1>
+          </header>
+</section>
+    <hr>
+      
+
+
+    <!--Navagation bar to reach the other pages-->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/aboutme.html">About Me</a></li>
+            <li><a href="/html/projects.html">Projects</a></li>
+            <li><a href="/html/skills.html">Skills</a></li>
+            <li><a href="/html/form-no-js.html">Contact Me (no js)</a></li>
+            <li><a href="/html/form-js.html"><b>Contact Me (with js)</b></a></li>
+            <li><a href="/assets/Resume-Charlie-Trinh.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+
+      <hr>
+    <!-- main content of this page -->
+    <main>
+        <h1><u>Contact Me!</u></h1>
+        <!-- used a form to create a space for text boxes so viewers can send me a message -->
+        <!-- they will need a name, valid email, their message and a rating to be able to send a message through this form -->
+        <form action="https://httpbin.org/post" method="POST" id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <p class="error-message" id="name-error">Name is required.</p>
+            <br>
+        
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <p class="error-message" id="email-error">Enter a valid email address.</p>
+            <br>
+        
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" maxlength="148" required></textarea>
+            <p id="error" class="error-message">Only letters, numbers, and spaces are allowed.</p>
+            <p id="charCount" class="char-count">148 characters remaining</p>
+        
+            <br>
+            <input type="hidden" name="potential_bot" value="true">
+            <input type="hidden" name="form-errors" id="formErrors">
+            <button type="submit">Send Message</button>
+        </form>
+
+        <script src="/js/form.js"></script>
+    </main>
+
+    <hr>
+
+        <!-- separate content from main -->
+        <aside>
+            <h2>Socials</h2>
+            <address>
+              <a href="https://github.com/Charlitoes" target="_blank">Github</a>
+              <br>
+              <a href="https://www.linkedin.com/in/charlie-trinh/" target="_blank">LinkedIn</a>
+              <br>
+              <a href="mailto:c2trinh@ucsd.edu">c2trinh@ucsd.edu</a>
+              <br>
+              <a href="tel:+7606726004">+(760)-672-6004</a>
+            </address>
+          </aside>
+
+    <hr>
+
+    <footer>
+        <p>Charlie's website © 2025</p>
+    </footer>
+
+    <script src="/js/dark-light-mode.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charlie's personal portfolio">
+    <meta name="author" content="Charlie Trinh">
+    <meta name="keywords" content="portfolio, Charlie Trinh, web developer, projects, skills">
+    <title>Charlie's Portfolio</title>
+    <link rel="icon" href="/assets/computer-icon.png">
+    <link rel="stylesheet" href="/css/stylesheet_main.css">
+    <link rel="stylesheet" href="/css/skills.css">
+</head>
+
+<body>
+
+
+    <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
+    <noscript>
+        <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view dark/light mode toggler.</p>
+      </noscript>
+
+      
+
+    
+    <section id="top">
+            <!-- dark light toggle button -->
+            <button id="themeToggle" class="theme-toggle-button" aria-label="Toggle theme">🌙</button>
+    <!-- UCSD logo and some backup images incase if one doesnt load -->
+    <picture>
+        <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
+        <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
+        <img src="/assets/UCSD-logo.svg.png" alt="Image of UCSD logo" width="150" height="150">
+    </picture>
+
+          <!-- title of my site -->
+          <header>
+            <h1>Charlie's Portfolio</h1>
+          </header>
+  </section>
+    <hr>
+
+    <!-- nav bar so we can navigate through each page -->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/aboutme.html">About Me</a></li>
+            <li><a href="/html/projects.html">Projects</a></li>
+            <li><a href="/html/skills.html"><b>Skills</b></a></li>
+            <li><a href="/html/form-no-js.html">Contact Me (no js)</a></li>
+            <li><a href="/html/form-js.html">Contact Me (with js)</a></li>
+            <li><a href="/assets/Resume-Charlie-Trinh.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+
+      <hr>
+
+    <!-- main content for this page -->
+    <main>
+    <h1><u>Skills</u></h1>
+    
+    <!-- I put all my skills within this div -->
+    <div id="skills">
+
+        <!-- using fieldset I wrapped each section of my skills in separate boxes -->
+        <!-- Front-end fieldset -->
+        <fieldset>
+          <legend><b><u>Front-End</u></b></legend>
+            <dl>
+                <img class="programming" src="/assets/html5_logo.svg.png" alt="HTML logo"><dt><abbr title="HyperText Markup Language"><b>HTML</b></abbr></dt>
+                <dd>Mark up language to structure content on the web</dd>
+                <img class="programming" src="/assets/CSS-Logo-2011.png" alt="CSS logo"><dt><abbr title="Cascading Style Sheets"><b>CSS</b></abbr></dt>
+                <dd>Style sheet language used to describe the site written in HTML or XML</dd>
+                <img class="programming" src="/assets/js_logo.png" alt="Javascript logo"><dt><b>JavaScript</b></dt>
+                <dd>A programming language used to create dynamic and interactive effects within web browsers</dd>
+            </dl>
+        </fieldset>
+        
+        <!-- Back-end fieldset -->
+        <fieldset>
+          <legend><b><u>Back-End Skills</u></b></legend>
+            <dl>
+                <img class="programming" src="/assets/nodejs_logo.png" alt="Node.js logo"><dt><b>Node.js</b></dt>
+                <dd>A JavaScript that allows JavaScript to be used for building scalable and high-performance web applications</dd>
+                <img class="programming" src="/assets/java_logo.png" alt="Java logo"><dt><b>Java</b></dt>
+                <dd>A versatile, object-orientated language designed for building platform-independent applications that can run on any device</dd>
+                <img class="programming" src="/assets/c_logo.png" alt="C logo"><dt>C</dt>
+                <dd>A powerful, low-level language that provides efficient memory management and is widely used for system software</dd>
+                <img class="programming" src="/assets/python_logo.png" alt="Python logo"><dt><b>Python</b></dt>
+                <dd>A high-level, interpreted programming language ideal for web development, data analysis, artificial intelligence, and automation tasks</dd>
+                <img class="programming" src="/assets/SystemVerilog_logo.svg" alt="SystemVerilog logo"><dt><b>SystemVerilog</b></dt>
+                <dd>An extension of Verilog hardware description language that adds more features for hardware design, verification, and modeling</dd>
+            </dl>
+        </fieldset>
+        
+        <!-- Databases fieldset -->
+        <fieldset>
+            <legend><b><u>Databases</u></b></legend>
+                <dl>
+                    <img class="programming" src="/assets/Postgresql_logo.svg" alt="Postgre logo"><dt><b>Postgre</b></dt>
+                    <dd>Open-source, relational database management system ideal for handling large-scale data and complex queries</dd>
+                    <img class="programming" src="/assets/sql_logo.png" alt="SQL logo"><dt><b>SQL</b></dt>
+                    <dd>A standard programming language used to manage and manipulate relational databases, allowing users to query, insert, update, and delete data efficiently</dd>
+                </dl>
+        </fieldset>
+
+        <!-- Software Development Methodologies fieldset -->
+        <fieldset>
+          <legend><b><u>Software Development Methodologies</u></b></legend>
+            <dl>
+              <img class="programming" src="/assets/agile_logo.png" alt="Agile logo"><dt><b>Agile</b></dt>
+              <dd>A methodology that emphasizes flexiblity, collaboration, and customer feedback</dd> 
+              <img class="gif" src="/assets/cdci_gif.gif" alt="CD/CI Gif"><dt><b>CD/CI</b></dt>
+              <dd>Meaning Continuous Delivery/Continuous Integration, which focuses on automating and streamlining the process of integrating and delivering software.</dd>
+            </dl>
+        </fieldset>
+        </div>
+    </main>
+
+    <hr>
+
+    <!-- separate content from main -->
+    <aside>
+      <h2>Socials</h2>
+      <address>
+        <a href="https://github.com/Charlitoes" target="_blank">Github</a>
+        <br>
+        <a href="https://www.linkedin.com/in/charlie-trinh/" target="_blank">LinkedIn</a>
+        <br>
+        <a href="mailto:c2trinh@ucsd.edu">c2trinh@ucsd.edu</a>
+        <br>
+        <a href="tel:+7606726004">+(760)-672-6004</a>
+      </address>
+    </aside>
+
+    <hr>
+
+    <footer>
+        <p>Charlie's website © 2025</p>
+    </footer>
+
+    <script src="/js/dark-light-mode.js"></script>
+
+</body>
+</html>

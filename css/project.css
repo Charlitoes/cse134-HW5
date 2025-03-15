@@ -1,0 +1,63 @@
+main *{
+    background-color: var(--card-background);
+    color: var(--card-text-color)
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.video-link{
+    display: none;
+}
+
+/* smaller screens */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto; /* Allow horizontal scroll on small screens */
+        display: block;
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .video-container {
+        display: none;
+    }
+
+    .video-link {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        color: #007BFF;
+        text-decoration: underline;
+    }
+}

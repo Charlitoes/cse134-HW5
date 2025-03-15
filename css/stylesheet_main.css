@@ -1,0 +1,310 @@
+/* Global Variables */
+:root {
+    --primary-color: #0073e6;
+    --secondary-color: #ff6600;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+    --nav-link-color: black;
+    --nav-link-hover: purple;
+    --card-background: black;
+    --card-text-color: white;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --code-background: #333;
+    --code-text: #fff;
+    --sidebar-background: #e3f2fd;
+}
+
+[data-theme="dark"] {
+    --background-color: #333;
+    --text-color: #fff;
+    --card-background: white;
+    --card-text-color: black;
+}
+
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family, sans-serif);
+    background-color: var(--background-color);
+}
+
+button.theme-toggle-button{
+    font-size: large;
+    position: absolute;
+    top: 20px; /* Adjust this to move the button down */
+    right: 20px; /* Adjust this to move the button closer to the right edge */
+    background-color: transparent;
+    border: none;
+    font-size: 2em; /* Adjust the font size if necessary */
+    cursor: pointer;
+    z-index: 1000; /* Ensures the button stays on top of other elements */
+    padding-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+    transform: scale(1.1); /* Optional: adds a hover effect */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2vh;
+    font-size: 1.2vw;
+    
+}
+
+/* header style */
+section#top header{
+    font-size: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: var(--text-color);
+    transform: rotate(5deg);
+}
+
+section#top{
+    font-size: 3.5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+
+/* UCSD Logo */
+picture img {
+    display: block;
+    margin: 3vh auto;
+    max-width: 15vw; /* Scales with viewport width */
+    height: auto;
+}
+
+/* nav bar */
+nav {
+    padding: 2vh 0;
+    display: flex;
+    justify-content: center; 
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center; 
+        gap: 3vw;
+        flex-wrap: wrap; 
+
+        li {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                font-family: "Lucida Console", "Courier New", monospace;
+                color: var(--nav-link-color, black);
+                font-size: 3vh;
+                padding: 10px 15px;
+                transition: 0.3s ease-in-out;
+                color: var(--text-color);
+
+                b {
+                    font-family: "Lucida Console", "Courier New", monospace;
+                }
+
+                &:hover {
+                    color: var(--nav-link-hover, (in oklab, red 50%, blue 50%)); /* Change color on hover */   
+                }
+            }
+        }
+    }
+}
+
+
+/* main content*/
+main {
+    max-width: 1024px;
+    margin: 30px auto;
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--card-shadow, (0, 0, 0, 0.1));
+}
+
+hgroup {
+    color: var(--card-text-color);
+    background-color: var(--card-background);
+
+    * {
+        color: var(--card-text-color);
+        background-color: var(--card-background);
+    }
+
+    h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+        color: var(--card-text-color);
+        background-color: var(--card-background);
+    }
+
+    p {
+        color: var(--card-text-color);
+        font-size: 28px;
+        padding: 10px;
+        background-color: var(--card-background);
+    }
+}
+
+/* Code Block */
+pre {
+    background-color: var(--code-background, #333);
+    color: var(--code-text, #fff);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    overflow-x: auto;
+    text-align: left;
+    code {
+        background-color: var(--code-background, #333);
+    }
+}
+/* Sidebar */
+@keyframes slideInSidebar {
+    from {
+        transform: translateY(-50%) translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-50%) translateX(0);
+        opacity: 1;
+    }
+}
+
+aside {
+    position: fixed; /* Sticks to the side */
+    right: 2vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16vw;
+    background: var(--sidebar-background, #e3f2fd);
+    padding: 2vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slideInSidebar 0.8s ease-out;
+
+    h2 {
+        font-size: 2vw;
+        margin-bottom: 1vh;
+        color: black;
+        background: var(--sidebar-background, #e3f2fd);
+    }
+}
+
+address {
+    background: var(--sidebar-background, #e3f2fd);
+
+    a {
+        display: block;
+        color: var(--primary-color, #0073e6);
+        font-size: 1.25vw;
+        margin: 1vh 0;
+        text-decoration: none;
+        transition: color 0.3s;
+        background: var(--sidebar-background, #e3f2fd);
+
+        &:hover {
+            color: var(--secondary-color, color(display-p3 1 0.5 0));
+        }
+    }
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+    section#top header{
+        font-size: 7.5vw;
+    }
+
+    body {
+        font-size: 3vw; /* Increase font size for readability */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    main {
+        width: 90vw; /* Expand content width */
+        padding: 5vw;
+    }
+
+    picture img {
+        max-width: 30vw; /* Scale UCSD logo properly */
+    }
+
+    address a {
+        font-size: 4vw;
+    }
+
+    footer {
+        font-size: 2.5vw;
+    }
+
+
+    hgroup h1 {
+        font-size: 6vw;
+    }
+    
+    hgroup p {
+        font-size: 4vw;
+
+    }
+    
+    /* Code Block */
+    pre {
+        font-size: 3vw;
+    }
+
+    aside {
+        position: static; /* Default positioning */
+        width: 75%; /* Full width for mobile */
+        margin: 20px auto; /* Centers it */
+        text-align: center; /* Aligns content */
+        margin-top: 40dvw;
+        h2{
+            font-size: 6vw;
+        }
+    }
+}
+
+/* tablet/laptop breakpoint */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    address a {
+        font-size: 3vw;
+    }
+    aside {
+        position: static; /* Default positioning */
+        width: 75%; /* Full width for mobile */
+        margin: 20px auto; /* Centers it */
+        text-align: center; /* Aligns content */
+        margin-top: 40dvw;
+        h2{
+            font-size: 5vw;
+        }
+    }
+}
+
+

@@ -1,0 +1,45 @@
+main *{
+    background-color: var(--card-background);
+    color: var(--card-text-color)
+}
+
+img.programming{
+    height: 100px;
+    width: auto;
+    margin-top: 10px;
+}
+
+img.gif{
+    height: 175px;
+    width: auto;
+    margin-top: 10px;
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 767px) {
+    img.programming{
+        height: 50px;
+        width: auto;
+    }
+
+    img.gif{
+        height: 125px;
+        width: auto;
+    }
+    
+
+}
+
+/* tablet/laptop breakpoint */
+@media (min-width: 768px) and (max-width: 1024px) {
+    img.programming{
+        height: 75px;
+        width: auto;
+    }
+
+    img.gif{
+        height: 150px;
+        width: auto;
+    }
+    
+}

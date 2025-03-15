@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charlie's personal portfolio">
+    <meta name="author" content="Charlie Trinh">
+    <meta name="keywords" content="portfolio, Charlie Trinh, web developer, projects, skills">
+    <title>Charlie's Portfolio</title>
+    <link rel="icon" href="/assets/computer-icon.png">
+    <link rel="stylesheet" href="/css/profile-card.css">
+    <link rel="stylesheet" href="/css/stylesheet_main.css">
+    <link rel="stylesheet" href="/css/aboutme.css">
+</head>
+
+<body>
+
+    <!-- noscript to make sure that if JS isnt enable, it reminds the viewer -->
+    <noscript>
+        <p>Your browser does not support JavaScript or it is disabled. Please enable JavaScript to view dark/light mode toggler.</p>
+      </noscript>
+
+    <section id="top">
+
+            <!-- dark light toggle button -->
+    <button id="themeToggle" class="theme-toggle-button" aria-label="Toggle theme">🌙</button>
+    
+    <!-- UCSD logo and some backup images incase if one doesnt load -->
+    <picture>
+        <source srcset="/assets/UCSD-logo.svg.png" type="image/png">
+        <source srcset="/assets/UCSD-logo.jpeg" type="image/jpeg">
+        <img src="/assets/UCSD-logo.svg.png" alt="Image of UCSD logo" width="150" height="150">
+    </picture>
+
+        <!-- title of my site -->
+        <header>
+            <h1>Charlie's Portfolio</h1>
+          </header>
+
+</section>
+
+    <hr>
+
+    <!-- nav bar so we can navigate through each page -->
+    <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/aboutme.html"><b>About Me</b></a></li>
+          <li><a href="/html/projects.html">Projects</a></li>
+          <li><a href="/html/skills.html">Skills</a></li>
+          <li><a href="/html/form-no-js.html">Contact Me (no js)</a></li>
+          <li><a href="/html/form-js.html">Contact Me (with js)</a></li>
+          <li><a href="/assets/Resume-Charlie-Trinh.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+
+      <hr>
+    
+    <!-- main content of this page -->
+    <main>
+        <h2><u>About Me</u></h2>
+
+        <!-- use a custom html tag called profile-card to make the css profile card for myself -->
+        <section class="profile">
+            <profile-card>
+            <div class="profile-content">
+                <img src="/assets/Charlie's-pic.jpg" alt="Profile Picture" class="profile-img">
+                <div class="profile-info">
+                <h2 class="name">Charlie Trinh</h2>
+                <p class="title">Student at UCSD</p>
+                <p class="bio">A passionate Computer Scientist striving to learn and improve my skills.</p>
+                </div>
+            </div>
+            </profile-card>
+    
+        </section>
+
+        <!-- use svg to create a timeline of my education -->
+        <div class="Timeline">
+            <svg viewBox="0 0 500 100" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: auto;">
+                <!-- Timeline Line -->
+                <line x1="50" y1="50" x2="450" y2="50" stroke="gray" stroke-width="2"/>
+            
+                <!-- Milestones -->
+                <circle cx="150" cy="50" r="10" fill="blue"/>
+                <circle cx="300" cy="50" r="10" fill="green"/>
+                <circle cx="450" cy="50" r="10" fill="orange"/>
+            
+                <!-- Labels -->
+                <text x="71" y="80" font-family="Arial" font-size="14" fill="black">High School(2017-2021)</text>
+                <text x="235" y="80" font-family="Arial" font-size="14" fill="black">College(2021-Present)</text>
+                <text x="435" y="80" font-family="Arial" font-size="14" fill="black">TBD...</text>
+            </svg>
+        </div>
+
+        <!-- used blockquote tag to write out this code as well as kbd tag to type out keyboard presses -->
+        <blockquote>
+            <p>"It's all <kbd>ctrl</kbd> + <kbd>c</kbd> and <kbd>ctrl</kbd> + <kbd>v</kbd> until something explodes"</p>
+            <cite>— Random Computer Scientist</cite>
+        </blockquote>
+
+        <!-- section to talk about my personality -->
+        <section class="Enjoyments">
+            <h2><u>Some things I enjoy</u></h2>
+            <ul>
+                <li><p>I love to <strong>learn new things</strong></p></li>
+                <li><p><strong>Solving problems</strong> and finding more <strong>efficent solutions</strong></p></li>
+                <li><p><strong>Motivated</strong> to improve myself</p></li>
+            </ul>
+        </section>
+
+        <!-- section to talk about my hobbies -->
+        <section class="Hobbies">
+            <h2><u>Hobbies</u></h2>
+            <details>
+                <summary>Job searching</summary>
+                <div class="details-content">
+                    <p>Still looking!</p>
+                </div>
+            </details>
+        
+            <details>
+                <summary>Listening to music (currently my favorite song)</summary>
+                <div class="details-content">
+                    <iframe src="https://open.spotify.com/embed/track/30oddeV4b75MDQ6JvkAXCW?utm_source=generator" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+            </details>
+        
+            <details>
+                <summary>Playing video games</summary>
+                <div class="details-content">
+                    <p>Final Fantasy</p>
+                    <p class="minecraft">Minecraft</p>
+                </div>
+            </details>
+        </section>
+    </main>
+    <hr>
+
+
+                <!-- separate content from main -->
+                <aside>
+                    <h2>Socials</h2>
+                    <address>
+                      <a href="https://github.com/Charlitoes" target="_blank">Github</a>
+                      <br>
+                      <a href="https://www.linkedin.com/in/charlie-trinh/" target="_blank">LinkedIn</a>
+                      <br>
+                      <a href="mailto:c2trinh@ucsd.edu">c2trinh@ucsd.edu</a>
+                      <br>
+                      <a href="tel:+7606726004">+(760)-672-6004</a>
+                    </address>
+                  </aside>
+            
+                  <hr>
+    <footer>
+        <p>Charlie's website © 2025</p>
+    </footer>
+
+    <script src="/js/dark-light-mode.js"></script>
+</body>
+
+</html>
