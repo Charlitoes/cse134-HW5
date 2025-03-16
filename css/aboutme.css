@@ -51,6 +51,7 @@ h2 {
 
 .Timeline text {
     font-size: .6vw; /* Scale text size based on viewport width */
+    color: var(--card-text-color);
 }
 
 /* style for what I enjoy doing */
