@@ -4,11 +4,5 @@
         "image": "/assets/minimips.png",
         "description": "A project where me and a team build a miniture version of mips",
         "link": "https://github.com/Eban-Covarrubias/miniMips_ComputerArchitecture"
-    },
-    {
-        "title": "Work Journal Website",
-        "image": "/assets/workjournal.png",
-        "description": "A gen z work journal I worked on with a team of 10 to practice agile and CD/CI methodologies",
-        "link": "https://github.com/cse110-sp24-group19/final-project"
     }
 ]
